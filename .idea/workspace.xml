@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b2eae80f-603b-4a65-9703-28c13bf42768" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.prettierrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/reset.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AboutMe/AboutMe.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/AboutMe/AboutMeStyled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Banner/Banner.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Banner/BannerStyled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Button/ButtonDefault.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Button/ButtonGoTop.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Contact/Contact.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Contact/ContactStyled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Container/Container.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/DarkMode/DarkMode.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/Footer.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Footer/FooterStyled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/Header.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header/HeaderStyled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MenuMobile/MenuItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MenuMobile/MenuMobile.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MenuMobile/MenuToggle.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MenuMobile/Navigation.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/MenuMobile/use-dimensions.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Portfolio/Portfolio.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Portfolio/PortfolioStyled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Qualification/Qualification.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Qualification/QualificationStyled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Services/Services.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Services/ServicesStyled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Skills/SkillBar.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Skills/Skills.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Skills/SkillsItem.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Skills/SkillsStyled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Skills/skillsSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Testimonial/Testimonial.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Testimonial/TestimonialStyled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/TitleSection/TitleSection.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/constant.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Demo/Demo.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Home/Home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/pages/Login/Login.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/providers/ThemeProvider/ThemeProvider.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/providers/ThemeProvider/ThemeProviderStyled.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/providers/ThemeProvider/themeProviderSlice.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/routes.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/tailwind.config.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/theme.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/app/store.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/app/store.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/features/counter/Counter.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/features/counter/Counter.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.tsx" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="222n6xQQCK2QcLWVAGCsu1pPNi1" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../VIMC/fse-vimc/portal-vimc-fe" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
+    <property name="ts.external.directory.path" value="D:\Super-TEST\super-test\node_modules\typescript\lib" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Super-TEST\super-test" />
+      <recent name="D:\Super-TEST\super-test\src" />
+    </key>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b2eae80f-603b-4a65-9703-28c13bf42768" name="Default Changelist" comment="" />
+      <created>1639044379060</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1639044379060</updated>
+      <workItem from="1639044380440" duration="2534000" />
+      <workItem from="1639097975945" duration="9168000" />
+      <workItem from="1639107160444" duration="18617000" />
+      <workItem from="1639187811617" duration="5393000" />
+      <workItem from="1639194000131" duration="8934000" />
+      <workItem from="1639274903155" duration="7705000" />
+      <workItem from="1639298771207" duration="44517000" />
+      <workItem from="1639412274820" duration="541000" />
+      <workItem from="1639444399973" duration="3889000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>

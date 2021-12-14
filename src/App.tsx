@@ -1,58 +1,64 @@
-import React from 'react';
-import logo from './logo.svg';
-import { Counter } from './features/counter/Counter';
-import './App.css';
+import React from 'react'
+import ThemeProvider from './providers/ThemeProvider/ThemeProvider'
+import { lightTheme, darkTheme } from './theme'
+import './index.css'
+import { useAppSelector } from './app/hooks'
+import { selectThemeProvider } from './providers/ThemeProvider/themeProviderSlice'
+import { THEME_OPTIONS } from './constant'
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
+import {routes} from './routes'
+import Login from './pages/Login/Login'
 
-function App() {
+const App = () => {
+  const themeProvider = useAppSelector(selectThemeProvider)
+  // @ts-ignore
+  const ProtectedRoute = ({ component: Component, ...rest }) => (
+    <Route
+      {...rest}
+      render={props =>
+        localStorage.getItem('jwt') ||
+        sessionStorage.getItem('jwt') ||
+        sessionStorage.getItem('jwt') ? (
+          <Component {...props} />
+        ) : (
+          <Redirect
+            to={{
+              pathname: '/login',
+              state: { from: props.location },
+            }}
+          />
+        )
+      }
+    />
+  )
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <Counter />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <span>
-          <span>Learn </span>
-          <a
-            className="App-link"
-            href="https://reactjs.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux
-          </a>
-          <span>, </span>
-          <a
-            className="App-link"
-            href="https://redux-toolkit.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Redux Toolkit
-          </a>
-          ,<span> and </span>
-          <a
-            className="App-link"
-            href="https://react-redux.js.org/"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            React Redux
-          </a>
-        </span>
-      </header>
-    </div>
-  );
+    <ThemeProvider theme={themeProvider.theme === THEME_OPTIONS.DARK ? darkTheme : lightTheme}>
+      <BrowserRouter>
+        <Switch>
+          {routes.map((route, index) => {
+            return (
+              <ProtectedRoute
+                key={index}
+                path={route.path}
+                exact={true}
+                component={route.component}
+              />
+            );
+          })}
+
+          <Route
+            exact
+            path={'/login'}
+            component={Login}
+          />
+        </Switch>
+      </BrowserRouter>
+
+    </ThemeProvider>
+  )
 }
 
-export default App;
+App.propTypes = {}
+
+export default App
