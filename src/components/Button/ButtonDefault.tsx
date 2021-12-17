@@ -1,14 +1,18 @@
 import React from 'react'
 import styled from 'styled-components'
 import PropTypes from 'prop-types'
-
+import {
+  LoadingOutlined,
+} from '@ant-design/icons'
 type PropsStyled = {
   iconPosition: any,
   color: string,
+  loading?: any
 }
 
 const ButtonDefaultWrapper = styled.div<PropsStyled>`
   display: inline-block;
+  opacity: ${props => props.loading ? 0.7 : 1};
   height: 52px;
   .button-default {
     align-items: center;
@@ -53,6 +57,10 @@ const ButtonDefaultWrapper = styled.div<PropsStyled>`
     box-shadow: rgba(0, 0, 0, .06) 0 2px 4px;
     transform: translateY(0);
   }
+  
+  .loading {
+    background-color: red;
+  }
 
 
 `
@@ -65,13 +73,15 @@ type Props = {
   themeProvider: {
     color: string,
   }
+  loading?: boolean,
 };
 
-const ButtonDefault = ({ text, icon, iconPosition, themeProvider }: Props) => {
+const ButtonDefault = ({ text, icon, iconPosition, themeProvider, loading }: Props) => {
 
   return (
-    <ButtonDefaultWrapper iconPosition={iconPosition} color={themeProvider.color}>
+    <ButtonDefaultWrapper iconPosition={iconPosition} color={themeProvider.color} loading={loading}>
       <button className='button-default'>
+        {loading &&  <LoadingOutlined />}
         {icon}
         {text}
       </button>

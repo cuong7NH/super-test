@@ -20,7 +20,7 @@ export const AboutMeWrapper = styled.div<Props>`
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    column-gap: 30px;
+    gap: 30px;
 
     .about-me-img {
       flex: 0 0 100%;
@@ -28,6 +28,7 @@ export const AboutMeWrapper = styled.div<Props>`
       @media screen and (min-width: 769px) {
         flex: 0 0 calc(50% - 15px);
         max-width: calc(50% - 15px);
+        padding-right: 15px;
       }
     }
 
@@ -52,7 +53,13 @@ export const AboutMeWrapper = styled.div<Props>`
 
       ul {
         display: flex;
-        gap: 50px;
+        gap: 20px;
+        @media screen and (min-width: 361px) {
+          gap: 40px;
+        }
+        @media screen and (min-width: 769px) {
+          gap: 50px;
+        }
         margin-bottom: 30px;
 
         li {

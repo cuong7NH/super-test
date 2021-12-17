@@ -43,19 +43,19 @@ const Skills = () => {
       icon: <UilTelegramAlt color={themeProvider.color} />,
       skills: [
         {
-          name: 'HTML',
+          name: 'Photoshop',
           percent: 90,
         },
         {
-          name: 'CSS',
+          name: 'UI/UX',
           percent: 80,
         },
         {
-          name: 'JavaScript',
+          name: 'Creativity',
           percent: 60,
         },
         {
-          name: 'React',
+          name: 'Communication',
           percent: 85,
         },
       ],
@@ -67,15 +67,35 @@ const Skills = () => {
       isOpen: true,
       skills: [
         {
-          name: 'HTML',
+          name: 'Java',
           percent: 90,
         },
         {
-          name: 'CSS',
+          name: 'My SQL',
           percent: 80,
         },
         {
-          name: 'JavaScript',
+          name: 'Databases',
+          percent: 60,
+        },
+      ],
+    },
+    {
+      name: 'DevOps',
+      yearsExperience: 2,
+      icon: <UilDesktopAlt color={themeProvider.color} />,
+      isOpen: true,
+      skills: [
+        {
+          name: 'Security',
+          percent: 50,
+        },
+        {
+          name: 'Cloud',
+          percent: 80,
+        },
+        {
+          name: 'Proactiveness',
           percent: 60,
         },
       ],

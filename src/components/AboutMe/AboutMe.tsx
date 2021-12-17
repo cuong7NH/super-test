@@ -9,8 +9,6 @@ import { useAppSelector } from '../../app/hooks'
 import { selectThemeProvider } from '../../providers/ThemeProvider/themeProviderSlice'
 import { useAnimation, motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
-import { THEME_OPTIONS } from '../../constant'
-import { darkTheme, lightTheme } from '../../theme'
 
 const AboutMe = () => {
   const themeProvider = useAppSelector(selectThemeProvider)
@@ -38,12 +36,7 @@ const AboutMe = () => {
             animate={controls}
             className={'about-me-img'}
           >
-            <svg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'>
-              <path
-                fill={themeProvider.theme === THEME_OPTIONS.DARK ? darkTheme.highlightColor : lightTheme.highlightColor}
-                d='M59.5,-33.9C73.6,-9.8,79.3,19.6,67.9,38.5C56.6,57.4,28.3,65.8,1.4,65C-25.6,64.2,-51.2,54.3,-62.3,35.5C-73.4,16.7,-70.1,-11,-57.3,-34.2C-44.5,-57.5,-22.3,-76.4,0.2,-76.5C22.6,-76.6,45.3,-57.9,59.5,-33.9Z'
-                transform='translate(100 100)' />
-            </svg>
+            <img src={process.env.PUBLIC_URL + '/assets/images/login-bg.svg'} alt={'bg'} />
           </motion.div>
           <div className={'about-me-info'}>
             <motion.h3

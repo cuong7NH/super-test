@@ -14,7 +14,7 @@ export const SkillsWrapper = styled.div`
     flex-wrap: wrap;
     justify-content: space-between;
     column-gap: 60px;
-    row-gap: 20px;
+    row-gap: 30px;
 `
 type Props = {
   themeProvider: {

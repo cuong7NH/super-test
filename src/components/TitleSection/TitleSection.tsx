@@ -26,6 +26,7 @@ const TitleSectionWrapper = styled.div<StyledProps>`
   h3 {
     font-size: 34px;
     font-weight: bold;
+    margin-bottom: 0;
 
   }
 
@@ -76,7 +77,7 @@ const TitleSection = (props: Props) => {
       <h3>{title}</h3>
       <div className={'bar'}>
         <svg width="125" height="12" viewBox="0 0 135 21" fill="none" xmlns="http://www.w3.org/2000/svg">
-          <path d="M8 13.3507C23.614 12.0121 30.8232 10.3647 46.5 9.31385C73.1353 7.52845 100.096 8.08065 126.851 8.08065" stroke="#F6E05E" stroke-width="15" stroke-linecap="round" stroke-linejoin="round"/>
+          <path d="M8 13.3507C23.614 12.0121 30.8232 10.3647 46.5 9.31385C73.1353 7.52845 100.096 8.08065 126.851 8.08065" stroke="#F6E05E" strokeWidth="15" strokeLinecap="round" strokeLinejoin="round"/>
         </svg>
       </div>
       <p>{desc}</p>

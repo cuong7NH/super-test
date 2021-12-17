@@ -4,6 +4,8 @@ import DarkMode from '../DarkMode/DarkMode'
 import { HeaderWrapper, MenuItem } from './HeaderStyled'
 import { useAppSelector } from '../../app/hooks'
 import { selectThemeProvider } from '../../providers/ThemeProvider/themeProviderSlice'
+import ButtonSound from '../Button/ButtonSound'
+import ButtonLogout from '../Button/ButtonLogout'
 
 const Header = () => {
   const themeProvider = useAppSelector(selectThemeProvider)
@@ -17,7 +19,6 @@ const Header = () => {
   ]
   const [menuActive, setMenuActive] = useState('Home')
 
-
   return (
     <HeaderWrapper themeProvider={themeProvider}>
       <Container>
@@ -29,7 +30,13 @@ const Header = () => {
                 <MenuItem
                   themeProvider={themeProvider}
                   isActive={menuActive === menu}
-                  onClick={() => setMenuActive(menu)}
+                  onClick={() => {
+                    if(menu === 'Logout') {
+                      localStorage.removeItem('jwt')
+                      return
+                    }
+                    setMenuActive(menu)
+                  }}
                   key={index}
                 >
                   <a href={`#${menu}`} style={{color: 'inherit', display: 'block'}}>{menu}</a>
@@ -39,6 +46,8 @@ const Header = () => {
 
             <li className={'dark-mode'}>
               <DarkMode/>
+              <ButtonSound />
+              <ButtonLogout/>
             </li>
           </ul>
         </div>

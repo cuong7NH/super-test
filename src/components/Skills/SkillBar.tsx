@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React from 'react'
 import styled from 'styled-components'
 import { useAppSelector } from '../../app/hooks'
 import { selectThemeProvider } from '../../providers/ThemeProvider/themeProviderSlice'
@@ -38,15 +38,6 @@ type Props = {
 const SkillBar = ({percent} : Props) => {
   const themeProvider = useAppSelector(selectThemeProvider)
 
-  const [count, ] = useState(0)
-  useEffect(() => {
-    console.log('count', count)
-    // while (count < percent) {
-    //   setTimeout(() => {
-    //     setCount(count + 1)
-    //   }, 100)
-    // }
-  }, [count])
   return (
     <SkillBarWrapper themeProvider={themeProvider}  percent={percent}/>
   )

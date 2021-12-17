@@ -6,16 +6,20 @@ import { selectThemeProvider, setTheme } from '../../providers/ThemeProvider/the
 import useSound from 'use-sound'
 // @ts-ignore
 import meowSfx from '../../sounds/meow.mp3'
+import { selectSoundProvider } from '../../store/soundStore'
+import styled from 'styled-components'
 
 const DarkMode = () => {
-
+  const soundProvider = useAppSelector(selectSoundProvider)
   const themeProvider = useAppSelector(selectThemeProvider)
   const dispatch = useAppDispatch()
-  const [play] = useSound(meowSfx);
+  const [play] = useSound(meowSfx)
 
   const [isDarkMode, setDarkMode] = useState(themeProvider.theme === THEME_OPTIONS.DARK)
   const toggleDarkMode = () => {
-    play()
+    if (!soundProvider.isMute) {
+      play()
+    }
     dispatch(setTheme(isDarkMode ? THEME_OPTIONS.LIGHT : THEME_OPTIONS.DARK))
   }
 
@@ -24,17 +28,21 @@ const DarkMode = () => {
   }, [themeProvider])
 
   return (
+    <DarkModeSwitchWrapper>
       <DarkModeSwitch
         checked={isDarkMode}
         onChange={toggleDarkMode}
         size={24}
         sunColor={'#5E5C7F'}
       />
+    </DarkModeSwitchWrapper>
   )
 }
 
-DarkMode.propTypes = {
-
-}
+DarkMode.propTypes = {}
 
 export default DarkMode
+
+const DarkModeSwitchWrapper = styled.div`
+  display: flex;
+`

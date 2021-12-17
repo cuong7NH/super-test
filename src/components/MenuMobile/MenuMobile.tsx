@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { useEffect, useRef } from 'react'
+import { useRef } from 'react'
 // @ts-ignore
 import { motion, useCycle } from 'framer-motion'
 import { useDimensions } from './use-dimensions'
@@ -15,14 +15,8 @@ import { THEME_OPTIONS } from '../../constant'
 import { darkTheme, lightTheme } from '../../theme'
 
 
-// background-color: ${(themeProvider) => themeProvider.theme === THEME_OPTIONS.DARK ? darkTheme.body : lightTheme.body};
-
 const MenuMobile = () => {
   const themeProvider = useAppSelector(selectThemeProvider)
-
-  useEffect(() => {
-    console.log('themeProvider')
-  }, [themeProvider])
 
   const sidebar = {
     open: (height = 1000) => ({
@@ -61,10 +55,13 @@ const MenuMobile = () => {
       >
         <motion.div className='background' variants={sidebar} />
         <Navigation toggleOpen={toggleOpen}/>
-        <MenuToggle toggle={() => {
-          play()
-          toggleOpen()
-        }} />
+        <div>
+          <MenuToggle toggle={() => {
+            play()
+            toggleOpen()
+          }} />
+        </div>
+
       </motion.nav>
     </MenuMobileWrapper>
   )
@@ -79,7 +76,6 @@ type menuMobileType = {
 const MenuMobileWrapper = styled.div<menuMobileType>`
   @media only screen and (min-width: 801px) {
     display: none;
-
   }
   display: block;
 

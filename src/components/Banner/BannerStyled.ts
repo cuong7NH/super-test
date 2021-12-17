@@ -10,17 +10,41 @@ type Props = {
 
 export const BannerWrapper = styled.div<Props>`
   padding-top: 80px;
-  @media screen and (min-width: 481px){
+  @media screen and (min-width: 481px) {
     padding-top: 100px;
+  }
+
+  .banner-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: -1;
+    height: 500px;
+    background:  ${props => props.themeProvider.theme === THEME_OPTIONS.LIGHT ? 'linear-gradient(0deg, #ffffff, #bfe6ff)' : 'linear-gradient(0deg, #b3e5ff1a, #b3e5ff00)'};
+  }
+
+  .banner-bg-bottom {
+    position: absolute;
+    top: 426px;
+    left: 0;
+    right: 0;
+    z-index: -1;
+
+    svg {
+      path {
+        fill: ${props => props.themeProvider.theme === THEME_OPTIONS.LIGHT ? lightTheme.body : darkTheme.body};
+        
+      }
+    }
   }
 
   .banner {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
-    column-gap: 30px;
+    gap: 30px;
     align-items: center;
-    
 
 
     .banner-social {
@@ -70,8 +94,37 @@ export const BannerWrapper = styled.div<Props>`
       }
     }
 
+
+  
     .banner-img {
+      
       order: 2;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      @keyframes myAnimation {
+        0%   {transform :translate(0, 0) scale(1) rotateY(0);}
+        25%   {transform :translate(-10px, 10px) scale(1.025) rotateY(10deg);}
+        50%   {transform :translate(-10px, -10px) scale(1.05) rotateY(0);}
+        75%   {transform :translate(0px, 10px) scale(1.025) rotateY(-10deg);}
+        100%   {transform :translate(0, 0) scale(1) rotateY(0);}
+      }
+      .me  {
+        position: relative;
+        animation: myAnimation 6s infinite;
+        img {
+          width: 100%;
+          max-width: 200px;
+        }
+      }
+      .demo {
+        z-index: -1;
+        position: absolute;
+        left: 100px;
+        
+      }
+
       flex: 0 0 calc(100% - 80px);
       max-width: calc(100% - 80px);
       @media screen and (min-width: 320px) {

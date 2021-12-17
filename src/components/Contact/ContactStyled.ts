@@ -108,11 +108,6 @@ export const ContactWrapper = styled.div<Props>`
       .input-box-50 {
         flex: 0 0 100%;
         max-width: 100%;
-        //@media screen and (min-width: 1200px) {
-        //  flex: 0 0 calc(50% - 15px);
-        //  max-width: calc(50% - 15px);
-        //}
-
       }
       .input-box-100 {
         flex: 0 0 100%;

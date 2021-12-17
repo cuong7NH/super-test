@@ -2,7 +2,7 @@ import * as React from 'react'
 // @ts-ignore
 import { motion } from 'framer-motion'
 // @ts-ignore
-import { UilEstate, UilUser, UilServerAlt, UilBag, UilGraduationCap } from '@iconscout/react-unicons'
+import { UilEstate, UilUser, UilServerAlt, UilBag, UilGraduationCap, UilMedal  } from '@iconscout/react-unicons'
 
 const variants = {
   open: {
@@ -21,7 +21,7 @@ const variants = {
   },
 }
 
-const colors = ['Home', 'About', 'Skills', 'Services', 'Portfolio', '']
+const colors = ['Home', 'About', 'Skills', 'Services', 'Portfolio', 'Contact']
 
 
 const renderIcon = (i: number) => {
@@ -30,6 +30,7 @@ const renderIcon = (i: number) => {
   if (i === 2) return <UilServerAlt />
   if (i === 3) return <UilBag />
   if (i === 4) return <UilGraduationCap />
+  if (i === 5) return <UilMedal  />
 }
 
 const getHref = (i: number) => {
@@ -38,6 +39,7 @@ const getHref = (i: number) => {
   if (i === 2) return '#Skills'
   if (i === 3) return '#Services'
   if (i === 4) return '#Portfolio'
+  if (i === 5) return '#Contact'
 }
 
 

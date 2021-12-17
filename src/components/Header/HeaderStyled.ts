@@ -19,8 +19,9 @@ type  themeProviderProps = {
 export const HeaderWrapper = styled.div<themeProviderProps>`
   height: 70px;
   padding: 10px 0;
+  width: 100vw;
   box-shadow: 0 .125rem .25rem rgba(0, 0, 0, .075) !important;
-  background-color: ${props => props.themeProvider.theme === THEME_OPTIONS.LIGHT ? 'rgba(255,255,255,0.9)' : 'rgba(53,51,83,0.9)'};
+  background:  ${props => props.themeProvider.theme === THEME_OPTIONS.LIGHT ? 'rgba(196,232,255,0.9)' : 'rgba(53,51,83,0.9)'};
   position: fixed;
   z-index: 999;
   top: 0;
@@ -39,12 +40,14 @@ export const HeaderWrapper = styled.div<themeProviderProps>`
       font-weight: 700;
       line-height: 50px;
       color: ${props => props.themeProvider.color};
+      font-family: 'Pacifico', cursive;
     }
 
     .menu {
       @media only screen and (min-width: 801px) {
         display: flex;
       }
+      margin-bottom: 0;
       line-height: 50px;
       display: none;
       flex-grow: 1;
@@ -55,6 +58,7 @@ export const HeaderWrapper = styled.div<themeProviderProps>`
         padding: 0 8px;
         display: flex;
         justify-content: center;
+        gap: 16px;
         align-items: center;
       }
     }

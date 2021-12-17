@@ -32,7 +32,7 @@ const SkillsItem = (props: Props) => {
     hidden: { opacity: 1,  y: 50 },
   }
   const handleOpenSkill = () => {
-    setIsOpenSkillList(!isOpenSkillList)
+    setIsOpenSkillList(true)
   }
   const controls = useAnimation()
   const [ref, inView] = useInView()

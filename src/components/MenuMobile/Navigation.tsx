@@ -6,6 +6,8 @@ import { useAppSelector } from '../../app/hooks'
 import { selectThemeProvider } from '../../providers/ThemeProvider/themeProviderSlice'
 import { THEME_OPTIONS } from '../../constant'
 import DarkMode from '../DarkMode/DarkMode'
+import ButtonSound from '../Button/ButtonSound'
+import ButtonLogout from '../Button/ButtonLogout'
 
 
 interface ToggleProps {
@@ -31,31 +33,80 @@ export const Navigation = ({toggleOpen} : ToggleProps) => {
     {itemIds.map(i => (
       <MenuItem i={i} key={i} toggleOpen={toggleOpen}/>
     ))}
-    <motion.li
-      style={{width: 24}}
-      variants={{
-        open: {
-          y: 0,
-          opacity: 1,
-          transition: {
-            y: { stiffness: 1000, velocity: -100 },
+    <div style={{display: 'flex', gap: 14}}>
+      <motion.li
+        style={{width: 24}}
+        variants={{
+          open: {
+            y: 0,
+            opacity: 1,
+            transition: {
+              y: { stiffness: 1000, velocity: -100 },
+            },
           },
-        },
-        closed: {
-          y: 50,
-          opacity: 0,
-          transition: {
-            y: { stiffness: 1000 },
+          closed: {
+            y: 50,
+            opacity: 0,
+            transition: {
+              y: { stiffness: 1000 },
+            },
           },
-        },
-      }}
-      whileHover={{scale: 1.2}}
-      whileTap={{ scale: 0.95, opacity: 0.8 }}
-    >
-      <DarkMode/>
-    </motion.li>
+        }}
+        whileHover={{scale: 1.2}}
+        whileTap={{ scale: 0.95, opacity: 0.8 }}
+      >
+        <DarkMode/>
+
+      </motion.li>
+      <motion.li
+        style={{width: 24}}
+        variants={{
+          open: {
+            y: 0,
+            opacity: 1,
+            transition: {
+              y: { stiffness: 1000, velocity: -100 },
+            },
+          },
+          closed: {
+            y: 50,
+            opacity: 0,
+            transition: {
+              y: { stiffness: 1000 },
+            },
+          },
+        }}
+        whileHover={{scale: 1.2}}
+        whileTap={{ scale: 0.95, opacity: 0.8 }}
+      >
+        <ButtonSound />
+      </motion.li>
+      <motion.li
+        style={{width: 24}}
+        variants={{
+          open: {
+            y: 0,
+            opacity: 1,
+            transition: {
+              y: { stiffness: 1000, velocity: -100 },
+            },
+          },
+          closed: {
+            y: 50,
+            opacity: 0,
+            transition: {
+              y: { stiffness: 1000 },
+            },
+          },
+        }}
+        whileHover={{scale: 1.2}}
+        whileTap={{ scale: 0.95, opacity: 0.8 }}
+      >
+        <ButtonLogout/>
+      </motion.li>
+    </div>
   </motion.ul>
 }
 
 
-const itemIds = [0, 1, 2, 3, 4]
+const itemIds = [0, 1, 2, 3, 4, 5]
