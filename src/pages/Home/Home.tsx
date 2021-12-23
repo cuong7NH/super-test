@@ -11,7 +11,6 @@ import Contact from '../../components/Contact/Contact'
 import MenuMobile  from '../../components/MenuMobile/MenuMobile'
 import Footer from '../../components/Footer/Footer'
 import ButtonGoTopWrapper from '../../components/Button/ButtonGoTop'
-import RateMe from '../../components/RateMe/RateMe'
 
 const Home = () => {
 
@@ -23,7 +22,6 @@ const Home = () => {
       <Banner />
       <AboutMe />
       <Skills />
-      <RateMe/>
       <Qualification/>
       <Services/>
       <Portfolio/>
