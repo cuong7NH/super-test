@@ -11,6 +11,7 @@ type Props = {
 export const DemoWrapper = styled.div<Props>`
   background: inherit;
   position: relative;
+  z-index: -2;
   height: 500px;
 
   .center {

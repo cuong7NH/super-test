@@ -2,7 +2,15 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2eae80f-603b-4a65-9703-28c13bf42768" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/pages/Home/Home.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/pages/Home/Home.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Banner/BannerStyled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/BannerStyled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Contact/ContactStyled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/ContactStyled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Demo/DemoStyled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Demo/DemoStyled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Services/ServicesStyled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ServicesStyled.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +33,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="add_unversioned_files" value="$PROJECT_DIR$/node_modules/@types/react-slick/index.d.ts" />
+    <property name="add_unversioned_files" value="$PROJECT_DIR$/node_modules/@types/react-slick/index.d.ts&#10;D:/Super-TEST/super-test/build/index.html" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -72,6 +80,8 @@
       <workItem from="1639653067804" duration="343000" />
       <workItem from="1639703792119" duration="470000" />
       <workItem from="1639706725650" duration="22195000" />
+      <workItem from="1640262375215" duration="10000" />
+      <workItem from="1640331698140" duration="4222000" />
     </task>
     <servers />
   </component>

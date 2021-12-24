@@ -8,7 +8,6 @@ import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom'
 
 import {routes} from './routes'
 import Login from './pages/Login/Login'
-import NotFoundPage from './pages/NotFoundPage/NotFoundPage'
 import { selectAccountProvider } from './providers/AccountProvider/accountProviderSlice'
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -47,7 +46,7 @@ const App = () => {
 
   return (
     <ThemeProvider theme={themeProvider.theme === THEME_OPTIONS.DARK ? darkTheme : lightTheme}>
-      <BrowserRouter>
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
         <Switch>
           {routes.map((route, index) => {
             return (
@@ -64,7 +63,7 @@ const App = () => {
             path={'/login'}
             component={Login}
           />
-          <Route component={NotFoundPage} />
+          {/*<Route component={NotFoundPage} />*/}
         </Switch>
       </BrowserRouter>
 

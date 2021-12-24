@@ -27,8 +27,8 @@ export const BannerWrapper = styled.div<Props>`
   .banner-bg-bottom {
     position: absolute;
     top: 426px;
-    left: 0;
-    right: 0;
+    width: 100vw;
+    overflow-x: hidden;
     z-index: -1;
 
     svg {
@@ -121,8 +121,10 @@ export const BannerWrapper = styled.div<Props>`
       .demo {
         z-index: -1;
         position: absolute;
-        left: 100px;
-        
+        left: -250px;
+        right: -30px;
+        max-width: 100vh;
+        overflow: hidden;
       }
 
       flex: 0 0 calc(100% - 80px);
