@@ -45,19 +45,19 @@ const Services = () => {
       let x = 0 , y = 0
       if(i === 0) {
         x = -200;
-        y = -200
+        y = -0
       }
       if(i === 1) {
         x = 200;
-        y = -200
+        y = -0
       }
       if(i === 2) {
         x = -200;
-        y = 200
+        y = 0
       }
       if(i === 3) {
         x = 200;
-        y = 200
+        y = 0
       }
       return  { opacity: 0, x: x, y: y }
     },

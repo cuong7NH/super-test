@@ -9,9 +9,10 @@ type Props = {
   }
 }
 export const ServicesWrapper = styled.div<Props>`
-        max-width: 100vw;
+  max-width: 100vw;
   overflow-x: hidden;
   padding-top: 80px;
+  padding-bottom: 10px;
   @media screen and (min-width: 481px){
     padding-top: 100px;
   }

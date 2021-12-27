@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b2eae80f-603b-4a65-9703-28c13bf42768" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.env" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Banner/BannerStyled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Banner/BannerStyled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Contact/ContactStyled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Contact/ContactStyled.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Demo/DemoStyled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Demo/DemoStyled.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Services/Services.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/Services.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/components/Services/ServicesStyled.ts" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Services/ServicesStyled.ts" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -81,12 +75,27 @@
       <workItem from="1639703792119" duration="470000" />
       <workItem from="1639706725650" duration="22195000" />
       <workItem from="1640262375215" duration="10000" />
-      <workItem from="1640331698140" duration="4222000" />
+      <workItem from="1640331698140" duration="4912000" />
+      <workItem from="1640506159344" duration="2076000" />
+      <workItem from="1640550469290" duration="28000" />
+      <workItem from="1640568717709" duration="966000" />
     </task>
+    <task id="LOCAL-00001" summary="fixbug">
+      <created>1640340375139</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1640340375139</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="fixbug" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixbug" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
